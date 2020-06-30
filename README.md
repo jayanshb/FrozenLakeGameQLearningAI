@@ -25,7 +25,10 @@ We initialize the initial q table to 0. For every episode, we perform either exp
 For **Exploitation**, we use the *Bellman* equation :- <br /> 
 q*(s,a) = R + r.max(q*(s',a'))
 
-<br /> where *s'* is the state reached by the player after performing action *a* in state *s* and * q* * is the optimal policy we will follow. 
+<br /> where *s'* is the state reached by the player after performing action *a* in state *s* and *q* * is the optimal policy we will follow. 
+
+We would take care of the exploration - exploitation tradeoff by using the following equation :- 
+*q(new)(s,a) = (1-a)q(s,a) + a(R_t + r*max(q(s',a')))*
 
 
 
