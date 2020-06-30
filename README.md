@@ -18,7 +18,7 @@ At the end of 10000 episodes of exploration and exploitation, the algorithm conc
 *Set of possible actions* - A 
 *Distribution of award given (state,action) pair* - R
 *Transition probability - distribution over next state given (state,action) pair* - P
-*Discount facctor* - $\Gamma$
+*Discount facctor* - \Gamma
 
 We initialize the initial q table to 0. For every episode, we perform either exploration or exploitation according to the following equations :- 
 
