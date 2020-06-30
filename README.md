@@ -19,9 +19,10 @@ At the end of 10000 episodes of exploration and exploitation, the algorithm conc
 ## Getting started 
 In order to view this project, you will need to install the required python packages
 
-`
+```
+
 pip install -r requirements.txt
-`
+```
 
 Now you can open up the terminal and see how the player trains itself using : 
 
