@@ -13,18 +13,18 @@ It is an AI based on Q learning from Reinforcement Learning. The Agent (game pla
 After training on 10000 episodes of games, the reward kept on increasing, on an average, after each episode as the Q table kept on filling up and converged to q* ie. our optimal reward-maximizing policy. 
 At the end of 10000 episodes of exploration and exploitation, the algorithm concluded with a **reward of 0.71**. This meant that out of the 100 times that the player tried to play the game, he was able to win 71 times. 
 
-## Mathematic Intuition
-*Set of possible states* - S 
-*Set of possible actions* - A 
-*Distribution of award given (state,action) pair* - R
-*Transition probability - distribution over next state given (state,action) pair* - P
-*Discount facctor* - r
+## Mathematic Intuition 
+*Set of possible states* - S <br />
+*Set of possible actions* - A <br />
+*Distribution of award given (state,action) pair* - R <br />
+*Transition probability - distribution over next state given (state,action) pair* - P <br />
+*Discount facctor* - r <br />
 
 We initialize the initial q table to 0. For every episode, we perform either exploration or exploitation according to the following equations :- 
 
-For **Exploitation**, we use the *Bellman* equation :-
+For **Exploitation**, we use the *Bellman* equation :- <br />
 <img src="https://render.githubusercontent.com/render/math?math=q^{*}(s,a) = R + \gamma max(q^{*}(s',a'))">
-Q*(s,a) = R +  r max(q*(s',a'))
+
 
 where *s'* is the state reached by the player after performing action *a* in state *s*
 
