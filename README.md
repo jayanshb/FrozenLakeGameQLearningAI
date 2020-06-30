@@ -25,8 +25,8 @@ We initialize the initial q table to 0. For every episode, we perform either exp
 For **Exploitation**, we use the *Bellman* equation :- <br /> 
 q*(s,a) = R + r.max(q*(s',a')) <br /> where *s'* is the state reached by the player after performing action *a* in state *s* and *q* * is the optimal policy we will follow. 
 
-For **Exploration** we randomly subsample the next state s~U(0,1) depending on the current state. We realize the q value achieved in this step and update the Q table accordingly. <br /> 
-We also perform an exploration rate decay using epsilon greedy algorithm by some factor alpha wherein, we optimize until we are able to use *exploitaion* ie. we reach our optimal policy <img src="https://render.githubusercontent.com/render/math?math={pi}">
+For **Exploration** we randomly subsample the next state s~U(0,1) depending on the current state. We realize the q value achieved in this step and update the Q table accordingly. <br /> <br /> 
+We also perform an exploration rate decay using epsilon greedy algorithm by some factor alpha wherein, we optimize until we are able to use *exploitaion* ie. we reach our optimal policy.
 
 
 ![Training results](/Images/rewards.png)
