@@ -23,7 +23,7 @@ At the end of 10000 episodes of exploration and exploitation, the algorithm conc
 We initialize the initial q table to 0. For every episode, we perform either exploration or exploitation according to the following equations :- 
 
 For **Exploitation**, we use the *Bellman* equation :- <br /> <br />
-<img src="https://render.githubusercontent.com/render/math?math=q^{*}(s,a) = R+\gamma max(q^{*}(s',a'))">
+<img src="https://render.githubusercontent.com/render/math?math=q^{*}(s,a) = R {+} \gamma max(q^{*}(s',a'))">
 
 <br /> where *s'* is the state reached by the player after performing action *a* in state *s*
 
