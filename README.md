@@ -13,6 +13,8 @@ It is an AI based on Q learning from Reinforcement Learning. The Agent (game pla
 After training on 10000 episodes of games, the reward kept on increasing, on an average, after each episode as the Q table kept on filling up and converged to q* ie. our optimal reward-maximizing policy. 
 At the end of 10000 episodes of exploration and exploitation, the algorithm concluded with a **reward of 0.71**. This meant that out of the 100 times that the player tried to play the game, it was able to win 71 times. 
 
+![Training results](/Images/rewards.png)
+
 ### Mathematic Intuition 
 - *Set of possible states* - S <br />
 - *Set of possible actions* - A <br />
@@ -29,7 +31,7 @@ For **Exploration** we randomly subsample the next state s~U(0,1) depending on t
 We also perform an exploration rate decay using epsilon greedy algorithm by some factor alpha wherein, we optimize until we are able to use *exploitaion* ie. we reach our optimal policy.
 
 
-![Training results](/Images/rewards.png)
+
 
 ### Getting started 
 In order to view this project, you will need to install the required python packages
